@@ -70,7 +70,7 @@ class cacheing_system:
             self.frequency_incrementer(current_node)
             if not self.cache_freq.get(current_node.freq):
                 self.cache_freq[current_node.freq] = doublyLL()
-            self.cache_freq[current_node.freq].add_in_front(current_node)
+            self.cache_freq[current_node.freq].add_in_front(current_node) 
             return current_node.data
         return None
         
@@ -86,9 +86,3 @@ class cacheing_system:
             self.cache_freq[1] = doublyLL()
         self.cache_freq[1].add_in_front(newNode)
         return True
-
-
-cache = cacheing_system(10)
-print(cache.get(123))
-print(cache.store(124,{1:"ISHU"}))
-print(cache.get(124))
