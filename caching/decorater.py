@@ -1,7 +1,7 @@
 import functools
 import inspect
-import caching.keys as key  # for now they have dummy function 
-import caching.lfu_system as lfu  #for now they have dummy function
+import caching.keys as key  
+import caching.lfu_system as lfu  
 import caching.sequrity as seq
 
 def cacheable(public : bool):
